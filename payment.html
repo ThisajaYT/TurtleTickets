@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payments Page</title>
+  <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+   
+  
+  <p id="ww">BUY TICKETS</p>
+  
+  <nav>
+    <ul>
+      <li><a href="Hikkaduwa turtle hatchery.html">Home</a></li>
+      <li><a href="tickets.html">Buy Tickets</a></li>
+      <li><a href="details.html">Details </a></li>
+      <li><a href="payment.html">Payment</a></li>
+      <li><a href="confirmation.html">Confirmation</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="payment-form">
+      <h2 id="payment">Enter Payment Details</h2>
+      <form id="paymentForm">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" placeholder="Enter your card number" required>
+
+        <label for="cardHolder">Card Holder Name:</label>
+        <input type="text" id="cardHolder" placeholder="Enter card holder's name" required>
+
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="text" id="expiryDate" placeholder="MM/YY" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" placeholder="Enter CVV" required>
+
+        <label for="paymentMethod">Payment Method:</label>
+        <div class="custom-select">
+          <select id="paymentMethod" required>
+            <option value="" selected disabled>Select a payment method</option>
+            <option value="credit">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="googlepay">Google Pay</option>
+            <!-- Add more payment methods as needed -->
+          </select>
+          <br>
+          <br>
+          <br>
+          
+        </div class="Pay-button">
+
+
+      <button type="submit" value="Make Payment" style="width: 324px;" >Make Payment</button>
+    </form>
+      <br><br>
+      <a href="confirmation.html"><button id="cc" ></button></a>
+      </form>
+    </div>
+  </main>
+<br>
+
+  <footer >
+    <p>&copy; 2023 Sri Lankan Turtle Population. All rights reserved.</p>
+     </footer> 
+  <script src="script.js"></script>
+
+</body>
+</html>

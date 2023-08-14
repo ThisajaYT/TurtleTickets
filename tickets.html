@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tickets Page</title>
+  <link rel="stylesheet" href="styles3.css">
+</head>
+
+<body>
+
+  <p id="ww">BUY TICKETS</p>
+
+  <nav>
+    <ul>
+      <li><a href="Hikkaduwa turtle hatchery.html">Home</a></li>
+      <li><a href="tickets.html">Buy Tickets</a></li>
+      <li><a href="details.html">Details </a></li>
+      <li><a href="payment.html">Payment</a></li>
+      <li><a href="confirmation.html">Confirmation</a></li>
+    </ul>
+  </nav>
+
+  <!-- calender -->
+  <div class="contianer">
+    <div class="calendar">
+      <div class="calendar-header">
+        <span class="month-picker" id="month-picker"> May </span>
+        <div class="year-picker" id="year-picker">
+          <span class="year-change" id="pre-year">
+            <pre></pre>
+          </span>
+          <span id="year">2020 </span>
+          <span class="year-change" id="next-year">
+            <pre>></pre>
+          </span>
+        </div>
+      </div>
+
+      <div class="calendar-body">
+        <div class="calendar-week-days">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+        <div class="calendar-days">
+        </div>
+      </div>
+      <div class="calendar-footer">
+      </div>
+      <div class="date-time-formate">
+        <div class="day-text-formate">TODAY</div>
+        <div class="date-time-value">
+          <div class="time-formate">02:51:20</div>
+          <div class="date-formate">23 - july - 2022</div>
+        </div>
+      </div>
+      <div class="month-list"></div>
+    </div>
+  </div>
+
+
+  <!-- calender end
+ -->
+
+
+
+
+
+  <table id="chargesTable">
+    <tr>
+      <th>Category</th>
+      <th>Hour Type</th>
+
+    </tr>
+    <tr>
+      <td>SL Adults (above 15 yrs)</td>
+      <td>$8</td>
+    </tr>
+
+    <tr>
+      <td>SL Child (5 - 14 yrs)</td>
+      <td>$4</td>
+    </tr>
+
+    <tr>
+      <td>Foreign Adults (above 15 yrs)</td>
+      <td>$20</td>
+    </tr>
+
+    <tr>
+      <td>Foreign Child (5 - 14 yrs)</td>
+      <td>$10</td>
+    </tr>
+
+    <tr>
+      <td>Infant (below 4 yrs)</td>
+      <td>Free</td>
+    </tr>
+  </table>
+
+  <!--Guests-->
+  <h1>Guests</h1>
+  <div id="ticketSelection">
+    <div class="ticketCategory">
+      <label for="foreignerAdult">SL Adults (above 15 yrs)</label>
+      <button class="decrementBtn" onclick="min1()">-</button>
+      <span id="s1"> </span>
+      <button class="incrementBtn" id="a" onclick="add1()">+</button>
+    </div>
+    <div class="ticketCategory">
+      <label for="foreignerChild">SL Child (5 - 14 yrs)</label>
+      <button class="decrementBtn" onclick="min2()">-</button>
+      <span id="s2"> </span>
+      <button class="incrementBtn" onclick="add2()">+</button>
+    </div>
+
+    <div class="ticketCategory">
+      <label for="slAdult">Foreign Adults (above 15 yrs)</label>
+      <button class="decrementBtn" onclick="min3()">-</button>
+      <span id="s3"></span>
+      <button class="incrementBtn" onclick="add3()">+</button>
+    </div>
+    <div class="ticketCategory">
+      <label for="slChild">Foreign Child (5 - 14 yrs)</label>
+      <button class="decrementBtn" onclick="min4()">-</button>
+      <span id="s4"></span>
+      <button class="incrementBtn" onclick="add4()">+</button>
+    </div>
+
+    <div class="ticketCategory">
+      <label for="infant">Infant (below 4 yrs)</label>
+      <button class="decrementBtn" onclick="min5()">-</button>
+      <span id="s5"></span>
+      <button class="incrementBtn" onclick="add5()">+</button>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="dropdown">
+    <button id="selectbtn">Click Here to Select Timelines</button>
+    <div class="dropdown-content">
+      <label>
+        <input onclick="time()" type="checkbox" name="timelines" id="select1"> 07.00 am - 08.00 am
+      </label>
+      <label>
+        <input onclick="time()" type="checkbox" name="timelines" id="select2"> 08.00 am - 09.00 am
+      </label>
+      <label>
+        <input type="checkbox" onclick="time()" name="timelines" value="3" id="select3"> 09.00 am - 10.00 am
+      </label>
+      <label>
+        <input type="checkbox" onclick="time()" name="timelines" value="4" id="select4"> 10.00 am - 11.00 am
+        (Peak)
+      </label>
+      <label>
+        <input type="checkbox" onclick="time()" name="timelines" value="5" id="select5"> 11.00 am - 12.00 pm
+        (Peak)
+      </label>
+      <label>
+        <input type="checkbox" onclick="time()" name="timelines" value="6" id="select6"> 12.00 pm - 01.00 pm
+        (Peak)
+      </label>
+      <label>
+        <input type="checkbox" onclick="time()" name="timelines" value="7" id="select7"> 01.00 pm - 02.00 pm
+      </label>
+      <label>
+        <input type="checkbox" onclick="time()" name="timelines" value="8" id="select8"> 02.00 pm - 03.00 pm
+      </label>
+      <label>
+        <input type="checkbox" onclick="time()" name="timelines" value="9" id="select9"> 03.00 pm - 04.00 pm
+        (Peak)
+      </label>
+      <label>
+        <input type="checkbox" onclick="time()" name="timelines" value="10" id="select10"> 04.00 pm - 05.00 pm
+        (Peak)
+      </label>
+      <label>
+        <input type="checkbox" onclick="time()" name="timelines" value="11" id="select11"> 05.00 pm - 06.00 pm
+        (Peak)
+      </label>
+    </div>
+  </div>
+
+  <table>
+    <tr>
+      <td>Date</td>
+      <td id="date"></td>
+    </tr>
+
+    <tr>
+      <td>Time</td>
+      <td id="time"></td>
+    </tr>
+
+    <tr>
+      <td>Duration</td>
+      <td id="duration"></td>
+    </tr>
+
+    <tr id="tickets-price">
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr id="sl-adult" style="display: none;">
+      <td id="a1"></td>
+      <td id="a2"></td>
+    </tr>
+
+    <tr id="sl-child" style="display: none;">
+      <td id="c1"></td>
+      <td id="c2"></td>
+    </tr>
+
+    <tr id="f-adult" style="display: none;">
+      <td id="fa1"></td>
+      <td id="fa2"></td>
+    </tr>
+
+    <tr id="f-child" style="display: none;">
+      <td id="fc1"></td>
+      <td id="fc2"></td>
+    </tr>
+
+    <tr id="tot">
+      <td id="tot1">Total($)</td>
+      <td id="tot2"></td>
+    </tr>
+
+
+  </table>
+  <!--         
+          <div>
+            <label for="year">Year:</label>
+            <input type="number" id="year" min="1900" max="2100" value="" />
+            <label for="month">Month:</label>
+            <input type="number" id="month" min="1" max="12" value="" />
+            <button onclick="showCalendar()">Show Calendar</button>
+        </div> -->
+
+  <!-- <div id="calendar-container"></div> -->
+
+  <a href="details.html" id="aa" class="button-link">Click here to proceed</a>
+
+  <br>
+  <br>
+
+  <script src="script.js"></script>
+</body>
+<footer>
+  <p>&copy; 2023 Sri Lankan Turtle Population. All rights reserved.</p>
+</footer>
+
+</html>
